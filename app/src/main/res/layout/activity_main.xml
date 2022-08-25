@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etfNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Value One"
+        android:layout_margin="10dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etfNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Value Two"
+        android:layout_margin="10dp"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@color/grey">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:weightSum="2">
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/grey"
+                ></Button>
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sub"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/grey"
+                ></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Multiply"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/grey"
+            ></Button>
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Divide"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/grey"
+            ></Button>
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Developed By M.B.T Madoluwage"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>
